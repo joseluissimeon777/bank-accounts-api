@@ -6,7 +6,7 @@ Este archivo contiene las instrucciones para ejecutar el proyecto y una breve de
 ## Descripción
 Este proyecto fue construido a modo de ejemplo.
 Consta de una API para operaciones con cuentas bancarias. Se implementaron algunos patrones de diseño que se detallan un poco más abajo,
-siendo estos no del todo necesarios para este contexto pero sirven a modo de ejemplo de implementación.
+siendo estos no del todo necesarios para este contexto pero sirven para demostrar una implementación.
 
 ## Funcionalidades
 - **Consulta de saldo**: Permite consultar el saldo de una cuenta bancaria por su ID.

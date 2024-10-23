@@ -22,19 +22,17 @@ suficiente.
 ## Instalación y Ejecución
 ### 1. Clonar Repositorio
 git clone https://github.com/joseluissimeon777/bank-accounts-api.git
-cd bankaccount-api
+cd BanckAccounts
 
 ### 2. Restaurar dependencias
 dotnet restore
 
 ### 3. Ejecutar API
-dotnet run
-
+dotnet run --project ./BanckAccounts.API/BankAccounts.API.csproj
 
 ### 4. Ejecutar Pruebas unitarias
 dotnet test
 	
-
 ## Patrones de diseño
     -CQRS
 	-Repository patttern

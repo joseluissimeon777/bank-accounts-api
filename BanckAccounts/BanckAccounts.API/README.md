@@ -21,7 +21,7 @@ suficiente.
 
 ## Instalación y Ejecución
 ### 1. Clonar Repositorio
-git clone https://github.com/tu-usuario/bankaccount-api.git
+git clone https://github.com/joseluissimeon777/bank-accounts-api.git
 cd bankaccount-api
 
 ### 2. Restaurar dependencias

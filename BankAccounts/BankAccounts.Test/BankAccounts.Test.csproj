@@ -18,11 +18,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Using Include="Xunit" />
+    <ProjectReference Include="..\BankAccounts.API\BankAccounts.API.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BanckAccounts.API\BankAccounts.API.csproj" />
+    <Using Include="Xunit" />
   </ItemGroup>
 
 </Project>

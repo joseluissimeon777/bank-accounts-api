@@ -22,16 +22,22 @@ suficiente.
 ## Instalación y Ejecución
 ### 1. Clonar Repositorio
 git clone https://github.com/joseluissimeon777/bank-accounts-api.git
-cd BanckAccounts
 
-### 2. Restaurar dependencias
+### 2.Ingresar a Raíz de la solución
+cd BankAccounts
+
+### 3. Restaurar dependencias
 dotnet restore
-
-### 3. Ejecutar API
-dotnet run --project ./BanckAccounts.API/BankAccounts.API.csproj
 
 ### 4. Ejecutar Pruebas unitarias
 dotnet test
+
+### 5. Ejecutar API
+dotnet run --project ./BankAccounts.API/BankAccounts.API.csproj
+
+### 6. Api desde swagger
+ http://localhost:5091/swagger
+
 	
 ## Patrones de diseño
     -CQRS

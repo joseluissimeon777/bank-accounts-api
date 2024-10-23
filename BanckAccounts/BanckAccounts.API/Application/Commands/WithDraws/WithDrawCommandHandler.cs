@@ -5,8 +5,18 @@ using BankAccounts.API.Domain.Repositories;
 
 namespace BankAccounts.API.Application.Commands.WithDraws
 {
+    /// <summary>
+    /// Command Handler for withdraw use case
+    /// </summary>
+    /// <param name="bankAccountRepository"></param>
     public class WithDrawCommandHandler(IBankAccountRepository bankAccountRepository) : ICommandHandler<WithDrawCommand>
     {
+        /// <summary>
+        /// Handle method for execute withdraws
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
         public async Task<Result> Handle(WithDrawCommand request, CancellationToken cancellationToken)
         {
             var bankAccount = await bankAccountRepository.GetById(request.AccountId);

@@ -2,6 +2,9 @@
 
 namespace BankAccounts.API.Domain
 {
+    /// <summary>
+    /// Bank Account Entity
+    /// </summary>
     public class BankAccount
     {
         public Guid Id { get; set; }

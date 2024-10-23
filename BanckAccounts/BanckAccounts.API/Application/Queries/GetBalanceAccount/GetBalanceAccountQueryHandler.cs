@@ -6,8 +6,20 @@ using System.ComponentModel.DataAnnotations;
 
 namespace BankAccounts.API.Application.Queries.GetBalanceAccount
 {
+    /// <summary>
+    /// Query Handler for Get Balance Account Use Case
+    /// </summary>
+    /// <param name="request"></param>
+    /// <param name="cancellationToken"></param>
+    /// <returns></returns>
     public class GetBalanceAccountQueryHandler(IBankAccountRepository bankAccountRepository) : IQueryHandler<GetBalanceAccountQuery, GetBalanceAccountResponse>
     {
+        /// <summary>
+        /// Handler method to execute Get Balance Account Use Case 
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
         public async Task<Result<GetBalanceAccountResponse>> Handle(GetBalanceAccountQuery request, CancellationToken cancellationToken)
         {
             var bankAccount = await bankAccountRepository.GetById(request.AccountId);
